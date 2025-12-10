@@ -21,7 +21,9 @@ app.get('/health', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🌐 Web server running on port ${PORT}`);
 });
-
+console.log('🚀 1. Starting bot initialization...');
+console.log('📦 Node version:', process.version);
+console.log('📁 Current directory:', __dirname);
 // ===== ORIGINAL BOT CODE STARTS BELOW =====
 // SXIDHXSS MD — Baileys WhatsApp bot
 const express = require('express');
@@ -623,5 +625,5 @@ async function initializeBot() {
     setTimeout(initializeBot, 10000);
   }
 }
-
+console.log('🔧 2. Calling initializeBot...');
 initializeBot();
