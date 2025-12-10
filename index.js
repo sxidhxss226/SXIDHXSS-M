@@ -616,14 +616,18 @@ process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
 });
 
-// Start bot with error handling
-async function initializeBot() {
+console.log(`${BOT_NAME} starting...`);
+
+// SIMPLIFIED STARTUP - No error handlers first
+async function testStart() {
+  console.log('🔍 Testing bot startup...');
   try {
     await startBot();
+    console.log('✅ Bot started successfully!');
   } catch (error) {
-    console.error('Failed to start bot:', error);
-    setTimeout(initializeBot, 10000);
+    console.log('❌ Bot startup failed:', error.message);
+    console.log('Full error:', error);
   }
 }
-console.log('🔧 2. Calling initializeBot...');
-initializeBot();
+
+testStart();
