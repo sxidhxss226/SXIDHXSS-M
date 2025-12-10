@@ -24,7 +24,7 @@ app.listen(PORT, () => {
 
 // ===== ORIGINAL BOT CODE STARTS BELOW =====
 // SXIDHXSS MD — Baileys WhatsApp bot
-
+const express = require('express');
 const {
   default: makeWASocket,
   useMultiFileAuthState,
