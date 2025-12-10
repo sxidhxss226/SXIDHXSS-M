@@ -1,0 +1,72 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Session files (VERY IMPORTANT - don't upload session data)
+session/
+*.session
+*.json
+*.store
+auth_info_*
+creds.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Build outputs
+dist/
+build/
+out/
+*.exe
+*.out
+*.app
+
+# Logs
+logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Render specific
+.render/
