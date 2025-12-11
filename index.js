@@ -26,7 +26,7 @@ console.log('📦 Node version:', process.version);
 console.log('📁 Current directory:', __dirname);
 // ===== ORIGINAL BOT CODE STARTS BELOW =====
 // SXIDHXSS MD — Baileys WhatsApp bot
-const express = require('express');
+
 const {
   default: makeWASocket,
   useMultiFileAuthState,
